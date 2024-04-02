@@ -85,8 +85,8 @@ export default function TodosFilmes() {
   return (
     <View style={styles.container}>
       <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%', margin: 20, height: 50, borderColor: 'black', borderWidth: 1 }}>
-        <TextInput style={{ width: "70%" }} value={searchMovie} onChangeText={setSearchMovie}></TextInput>
-        <TouchableOpacity onPress={() => procuraFilme()}><Text>Procurar</Text></TouchableOpacity>
+        <TextInput style={{ width: "70%", height:'100%' ,borderColor:'black', borderWidth:1 }} value={searchMovie} onChangeText={setSearchMovie}></TextInput>
+        <TouchableOpacity onPress={() => procuraFilme()} style={{backgroundColor:"dodgerblue", width:'100%',height:'100%', display:"flex",justifyContent:'center'}} ><Text style={{width:'100%', color:'white', display:'flex',alignItems:'center'}}>Procurar</Text></TouchableOpacity>
       </View>
 
       <ScrollView style={{ width: '95%' }}>

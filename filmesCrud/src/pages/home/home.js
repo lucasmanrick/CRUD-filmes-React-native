@@ -102,6 +102,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <View style={{ width: '100%', height: '50%', display: 'flex', justifyContent: 'flex-end', paddingBottom: 25 }}>
+    
         <Text>Seja bem vindo ao MovieLegacy</Text>
       </View>
       {/*container buttons navigators */}

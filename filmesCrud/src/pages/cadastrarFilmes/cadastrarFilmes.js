@@ -50,7 +50,8 @@ export default function CadastrarFilme() {
 
             <TouchableOpacity
                 onPress={() => {
-                    criaFilme()
+                    criaFilme();
+                    navigation.navigate('home')
                 }}
                 style={[styles.alignVH, {display:'flex',justifyContent:'center', alignItems:'center' ,width: '80%', height: 40, borderColor: 'black', backgroundColor: 'blue', borderRadius: 4 }]}>
                 <Text style={{ color: 'white' }}>Salvar</Text>
